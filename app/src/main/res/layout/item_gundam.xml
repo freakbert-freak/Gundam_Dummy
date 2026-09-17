@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    android:layout_marginBottom="10dp"
+
+    android:clickable="true"
+    android:focusable="true"
+
+    android:foreground=
+        "?attr/selectableItemBackground"
+
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="0dp"
+    app:strokeColor="#D2D5D7"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgGundam"
+
+            android:layout_width="96dp"
+            android:layout_height="0dp"
+
+            android:background="#E9EAEB"
+            android:contentDescription=
+                "Gundam image"
+
+            android:scaleType="centerCrop"
+
+            app:layout_constraintTop_toTopOf=
+                "parent"
+
+            app:layout_constraintBottom_toBottomOf=
+                "parent"
+
+            app:layout_constraintStart_toStartOf=
+                "parent" />
+
+        <TextView
+            android:id="@+id/tvName"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="8dp"
+
+            android:ellipsize="end"
+            android:maxLines="2"
+
+            android:textColor="#202326"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            app:layout_constraintStart_toEndOf=
+                "@id/imgGundam"
+
+            app:layout_constraintEnd_toStartOf=
+                "@id/imgArrow"
+
+            app:layout_constraintTop_toTopOf=
+                "parent" />
+
+        <TextView
+            android:id="@+id/tvPilotLabel"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="10dp"
+
+            android:text="Pilot"
+            android:textColor="#73787D"
+            android:textSize="13sp"
+
+            app:layout_constraintStart_toEndOf=
+                "@id/imgGundam"
+
+            app:layout_constraintTop_toBottomOf=
+                "@id/tvName" />
+
+        <TextView
+            android:id="@+id/tvPilot"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+
+            android:ellipsize="end"
+            android:maxLines="1"
+
+            android:textColor="#202326"
+            android:textSize="14sp"
+
+            app:layout_constraintStart_toEndOf=
+                "@id/imgGundam"
+
+            app:layout_constraintEnd_toStartOf=
+                "@id/imgArrow"
+
+            app:layout_constraintTop_toBottomOf=
+                "@id/tvPilotLabel" />
+
+        <ImageView
+            android:id="@+id/imgArrow"
+
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+
+            android:padding="7dp"
+            android:contentDescription="Lihat detail Gundam"
+
+            android:src="@drawable/ic_arrow_right"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
