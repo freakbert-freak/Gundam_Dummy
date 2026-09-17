@@ -17,7 +17,7 @@ Home / Gundam List           Detail Gundam
 │ Search...       │          │                 │
 │                 │          │     IMAGE       │
 │ [IMG] RX-78-2  >│          │                 │
-│       Amuro Ray │          │ RX-78-2 GUNDAM │
+│       Amuro Ray │          │ RX-78-2 GUNDAM  │
 │                 │          │ PILOT           │
 │ [IMG] Gundam EX>│          │ Amuro Ray       │
 │                 │          │                 │
